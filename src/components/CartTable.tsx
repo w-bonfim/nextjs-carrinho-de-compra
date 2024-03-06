@@ -57,9 +57,6 @@ const CartTableRow = (props: {
   )
 }
 
-// src/components/CartTable.tsx
-
-// ...
 
 export default function CartTable() {
     const [cartEntries, setCartEntries] = useState<CartEntry[]>([])

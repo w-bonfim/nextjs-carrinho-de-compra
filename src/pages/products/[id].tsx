@@ -32,7 +32,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   }
 
   const Product: NextPage = (props: {
-    children?: ReactNode  
+    children?: ReactNode
     product?: ProductType
   }) => {
     return (
