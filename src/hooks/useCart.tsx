@@ -4,8 +4,8 @@ import { ReactNode, createContext, useContext, useEffect, useState } from "react
 
 type CartContextType = {
     cart: ProductType[]
-    addProduct: { product: ProductType} 
-    removeProduct: { productId: number} 
+    addProduct: (product: ProductType) => void
+    removeProduct: ( productId: number) => void
 }
 
 const CartContext = createContext<CartContextType>({} as CartContextType) 
