@@ -12,7 +12,7 @@ export const fetchProducts = async () => {
     return products
 }
 
-export const fetchProduct = async (id: string) => {
+export const fetchProduct = async (id: string | number) => {
     const product: ProductType[] = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/products/${id}`).then(res => res.json())
     return product
 }
